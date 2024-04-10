@@ -1,196 +1,149 @@
-body {
+* {
   padding: 0;
   margin: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.main {
-}
+/* header */
 
 .header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  color: white;
   background-color: #1f2937;
-  margin-bottom: 100px;
-  margin-top: 0;
 }
 
-.logo {
+.header-top {
   display: flex;
+  justify-content: space-between;
+  margin-right: 100px;
+  margin-left: 100px;
+  padding: 10px;
 }
 
-.logo p {
-  font-size: 24px;
-  font-weight: 800;
-  color: #f9faf8;
-}
-
-.links {
+ul {
   display: flex;
-  align-content: center;
+  list-style: none;
   gap: 20px;
 }
 
-.links a {
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-logo {
+  color: white;
+  font-size: 24px;
+}
+
+/* header body */
+.header-body {
+  display: flex;
+  padding: 100px;
+  /* background-color: red; */
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.body-text {
   font-size: 18px;
   color: #e5e7eb;
 }
-
-/* hero section */
-.hero {
-  
+.body-right img {
+  max-height: 250px;
+  height: 250px;
+  margin-left: 40px;
 }
-
-.hero-container {
-  display: flex;
-  justify-content: center;
-
-}
-
-.hero-left {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  align-items: self-start;
-  width: 50%;
-  padding: 40px 60px;
-}
-
-.hero-text {
-  font-size: 39px;
-  font-weight: 700;
-  width: 50%;
-  display: block;
-}
-
-
-
-.hero-button {
-  background-color: #3882f6;
+.header-button {
+  background-color: blue;
+  color: aliceblue;
   border-radius: 8px;
+  border: none;
 }
 
-
-
-
-.hero-right {
-  height: 300px;
-  width: 600px;
-  border: 3px solid #3882f6;
-  flex-grow: 1;
+button {
+  padding: 10px 25px;
 }
 
+/* section 2 with the image cards */
 
-
-
-/* content 1 */
-
-.content1 {
-
-}
-
-.content1-text {
-text-align: center;
-font-size: 40px;
-margin-bottom: 30px;
-}
-
-.cards-container {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  padding: 10px 10px;
-  /* background-color: red; */
-  margin-bottom: 50px;
-}
-
-.image {
-  background: white;
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  outline: 3px solid #3882f6;
-}
-
-.card-text {
-  padding-top: 10px;
-  max-width: 100px;
+.section2 {
   text-align: center;
 }
 
-
-
-
-
-
-
-/* content 2 */
-
-.content2-container {
-  background-color: #e5e7eb;
+.section2-header {
   font-size: 36px;
-  font-family: italic;
+  font-weight: bold;
   color: #1f2937;
-  display: flex;
-  justify-content: center;
+  margin: 50px;
 }
 
-.content-2 {
-  /* background-color: red; */
-  padding: 50px;
+.image-container {
+  display: flex;
+  color: #1f2937;
+  font-size: 18px;
+  margin: auto;
+  justify-content: center;
+  gap: 40px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 5px solid blue;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* section 3 */
+
+.section3 {
+  background-color: grey;
+  padding: 200px;
   display: flex;
   flex-direction: column;
-  margin: 100px;
-  gap: 2rem;
-  width: 50%;
+  margin-top: 80px;
 }
 
-/* .content2-text {
-  padding-left: 500px;
-  padding-right: 500px;
-} */
-
-.content2-quote {
-  display: flex;
-  justify-content: end;
-  margin-right: 20px;
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
 }
 
-/* content 3 */
-.content3 {
-  display: flex;
-  padding: 0px 20px;
-  background-color: #3882f6;
-  justify-content: space-around;
-  margin-bottom: 80px;
-  margin-top: 50px;
+.thor {
+  color: white;
+  font-weight: bold;
+  align-self: flex-end;
 }
 
-.content3-container {
-  padding: 20px 10px;
-  border-radius: 15px;
+.section4 {
+  padding: 30px 150px;
 }
-.content3-button {
-  align-self: center;
+.action-box {
   background-color: #3882f6;
   border-radius: 4px;
-  border: none;
-  color: white;
-  outline: 2px solid white;
-  margin: 4px 0px;
-  padding-right: 20px;
+  color: #f9faf8;
+  display: flex;
+  padding: 33px 77px;
+  justify-content: space-around;
 }
 
-/* footer */
+.section3-button {
+  background-color: blue;
+  color: aliceblue;
+  padding: 5px 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+
 .footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  color: #e5e7eb;
-  background-color: #1f2937;
-  padding: 30px;
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    padding: 20px;
+    font-size: 9px;
 }
